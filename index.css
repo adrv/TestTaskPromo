@@ -1,0 +1,112 @@
+html {
+	font-family: sans-serif;
+}
+
+body {
+    margin: 0;
+	padding: 0;
+}
+
+h1 {
+	font-style: italic;
+	font-size: 52px;
+}
+
+h2 {
+	font-size: 36px;
+}
+
+header {
+  height: 762px;
+  background-image: url('./header2.jpg');
+}
+
+li {
+	list-style: none;
+}
+
+ul {
+	padding: 0;
+}
+
+.logo-main {
+  float: left;
+  background-image: url('./logo-main.png');
+  width: 198px;
+  height: 41px;
+  margin: 20px 300px;
+}
+
+.main-nav {
+	float: right;
+	position: relative;
+	left: -230px;
+	top: 15px;
+}
+
+.main-nav li.active {
+    color: #fec54c;
+}
+
+ul li {
+  cursor: pointer;
+  font-size: 14px;
+}
+
+ul.main-nav > li {
+	font-weight: bold;
+  float: left;
+  padding: 10px 10px 20px 10px;
+	color: white;
+  text-transform: uppercase;
+
+}
+
+ul.main-nav > li > ul {
+	visibility: hidden;
+	position: absolute;
+	top: 35px;
+}
+
+ul.main-nav > li:hover > ul {
+	visibility: visible;
+}
+
+ul.main-nav > li > ul > li:hover {
+  color: white;
+  background-color: #fec54c;
+  transition: all 0.3s;
+}
+
+ul.main-nav > li > ul > li {
+	text-transform: none;
+	font-weight: normal;
+	padding: 10px;
+	color: #666;
+	background-color: white;
+	border-bottom: 1px solid rgb(199, 199, 199);
+}
+
+.promo {
+	padding-top: 100px;
+	color: #007cc3;
+	text-align: center;
+	clear: both;
+}
+
+.promo-demo-link {
+	display: block;
+	width: 400px;
+	height: 44px;
+	text-align: right;
+	background: url('./gk_video_link.png') no-repeat;
+	line-height: 33px;
+	text-decoration: none;
+	margin: 0 auto;
+}
+
+.promo-demo-link:hover {
+	color: yellow;
+	background-position-x: 20px;
+    transition: all 0.3s;
+}
